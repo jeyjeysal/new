@@ -1,0 +1,524 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard | Remark Material Admin Template</title>
+	<link rel="shortcut icon" href="image/shortcut.ico" size="16x16">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highchatrs.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     
+</head>
+<body>
+	<header class="menu fixed-top">
+		<div onclick="menu()" class="one">
+		<a href=""><img src="image/menup.svg" height="14" width="14"></a>
+		<a href=""><img src="image/fullscreen.svg" width="10" height="10"></a>
+		<a href=""><img src="image/search.svg" height="14" width="14"></a>
+	    <a href=""> Mega <img src="image/down-arrow.png" height="10" width="10" style="display: inline-block; margin-left:5px;"></a>
+		</div>
+			
+		<div class="second">
+			<img src="image/logo-color.webp" title="Remark" height="30" width="30"></div>
+		<div class="three">
+	<img src="image/us.svg" height="20" width="20">
+	<img  style=" border-radius: 50%;" src="image/adam.webp" height="20" width="20">
+	<div class="box"><span class="bell">5</span><a href=""><img src="image/bell.svg"height="20" width="20"></a></div>
+	<div class="box"><span class="message">3</span><a href=""><img src="image/envelope.svg"height="20" width="20"></a></div>
+	<div class="boxing"><a href=""><img src="image/comment.svg"height="20" width="20"></a></div>
+		</div>
+		</header>
+	<div id="menubar" onclick="menu()">
+		<div class="menubar-header">
+			<div class="menuimage">
+				<div class="vertical-align-middle">
+					<img src="image/herman.webp" style="width:40px; height: 40px; border-radius: 50%;">
+				<div class="site-menubar-info">
+              <h5 class="site-menubar-user">Machi</h5>
+              <p class="site-menubar-email">machidesign@gmail.com</p>
+            </div>
+			</div>
+		</div>
+		<div class="menubar-body">
+			<ul>
+				 <li><a href=""><img src="image/dashboard.png"><span>Dashboard</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+			    <li><a href=""><img src="image/layout.png"><span>Layout</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<li><a  href=""><img src="image/paint.png"><span>pages</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<li><a href=""><img src="image/addon.png"><span>Basic UI</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<li><a href=""><img src="image/paint.png"><span>Advanced UI</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<!-- <li><a href=""><img src="image/puzzle.png"><span>Structure</span><img style="width: 10px;margin-left: 80px"src="image/next.png"></a></li> -->
+				<li><a href=""><img src="image/monitor.png"><span>Widgets</span><img  style="width: 10px;margin-left: 80px"src="image/next.png"></a></li>
+				<li><a href=""><img src="image/dashboard.png"><span>Forms</span><img  style="width: 10px;margin-left: 80px"src="image/next.png"></a></li>
+				<li><a href=""><img src="image/dashboard.png"><span>Tables</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<li><a href=""><img src="image/dashboard.png"><span>Charts</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+				<li><a href=""><img src="image/dashboard.png"><span>Apps</span><img style="width: 10px;margin-left: 80px" src="image/next.png"></a></li>
+			</ul>
+		</div>
+	</div></div>
+
+	<section class=" page">
+		<div class="page-content container-fluid">
+		<div class="row pagerow">
+			<div class=" col-xl-3  col-md-6 my-3" style="height: 208px" >
+				<div class="card">
+				<div class="card-body">
+					<div class="clearfix">
+                <div class="grey-800 float-left py-10">
+                 <img src="image/user.svg" height="13" width="13">                User
+                </div>
+                <span class="float-right grey-700 font-size-30" style="font-weight: 500;">1,253</span>
+              </div>
+              <div class="mb-20 grey-500">
+                <i class="icon md-long-arrow-up green-500 font-size-16"></i> 15%
+                From this yesterday
+              </div>
+              <div class=" chart">
+				<svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%; fill:#6610f2;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M0,50L0,50C10.554,47.917,21.108,46.97,31.663,43.75C42.217,40.53,52.771,22.5,63.325,22.5C73.879,22.5,84.433,25,94.988,25C105.542,25,116.096,15,126.65,15C137.204,15,147.758,21.25,158.313,21.25C168.867,21.25,179.421,8.75,189.975,8.75C200.529,8.75,211.083,13.699,221.638,18.75C232.192,23.801,242.746,39.583,253.3,50L253.3,50Z" class="ct-area"></path></g></g><g class="ct-labels"></g></svg>
+</div>
+</div>
+			
+</div>
+</div>
+			
+		 
+         
+         <div class=" col-xl-3 col-md-6 my-3" style="height: 208px;">
+         		<div class="card">
+				<div class="card-body">
+					<div class="clearfix">
+                <div class="grey-800 float-left py-10">
+                 <img src="image/user.svg" height="13" width="13">VISITS
+                </div>
+                <span class="float-right grey-700 font-size-30" style="font-weight:500; ">2,484</span>
+              </div>
+              <div class="mb-20 grey-500">
+                <i class="icon md-long-arrow-up green-500 font-size-16" style="color: grey;"></i > 15% From this yesterday
+              </div>
+         <div class="chart">
+            	<svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%; fill:#ffc107;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M0,50L0,50C12.062,45.833,24.124,43.056,36.186,37.5C48.248,31.944,60.31,12.5,72.371,12.5C84.433,12.5,96.495,25,108.557,25C120.619,25,132.681,6.25,144.743,6.25C156.805,6.25,168.867,35,180.929,35C192.99,35,205.052,31.25,217.114,31.25C229.176,31.25,241.238,43.75,253.3,50L253.3,50Z" class="ct-area"></path></g></g><g class="ct-labels"></g></svg>
+</div>
+</div>
+			
+</div>
+</div>
+<div class=" col-xl-3 col-md-6  my-3" style="height: 208px;">
+					<div class="card">
+				<div class="card-body">
+					<div class="clearfix">
+                <div class="grey-800 float-left py-10">
+                 <img src="image/user.svg" height="13" width="13">Total Clicks
+                </div>
+                <span class="float-right grey-700 font-size-30" style="font-weight: 500;">1,864</span>
+              </div>
+              <div class="mb-20 grey-500">
+                <i class="icon md-long-arrow-up green-500 font-size-16" style="color:#eee;"></i> 15%
+                From this yesterday
+              </div>
+         <div class="chart">
+            	<svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%; fill:#17a2b8;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M0,50L0,50C12.062,45.833,24.124,43.056,36.186,37.5C48.248,31.944,60.31,12.5,72.371,12.5C84.433,12.5,96.495,25,108.557,25C120.619,25,132.681,6.25,144.743,6.25C156.805,6.25,168.867,35,180.929,35C192.99,35,205.052,31.25,217.114,31.25C229.176,31.25,241.238,43.75,253.3,50L253.3,50Z" class="ct-area"></path></g></g><g class="ct-labels"></g></svg>
+	
+		
+	
+</div>
+</div>
+			
+</div>
+
+</div>
+			<div class=" col-xl-3 col-md-6  my-3" style="height: 208px;">
+					<div class="card">
+				<div class="card-body">
+					<div class="clearfix">
+                <div class="grey-800 float-left py-10">
+                 <img src="image/user.svg" height="13" width="13">Items
+                </div>
+                <span class="float-right grey-700 font-size-30" style="font-weight: 500;">845</span>
+              </div>
+              <div class="mb-20 grey-500">
+                <i class="icon md-long-arrow-up green-500 font-size-16"></i> 15%
+                From this week
+              </div>
+	<div class="chart">
+				<svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%; fill:#28a745;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M0,50L0,50C10.554,45,21.108,40,31.663,35C42.217,30,52.771,20.769,63.325,20C73.879,19.231,84.433,19.508,94.988,18.75C105.542,17.992,116.096,6.25,126.65,6.25C137.204,6.25,147.758,25,158.313,25C168.867,25,179.421,18.75,189.975,18.75C200.529,18.75,211.083,29.8,221.638,35C232.192,40.2,242.746,45,253.3,50L253.3,50Z" class="ct-area"></path></g></g><g class="ct-labels"></g></svg>
+	
+		
+
+</div>	
+</div>
+			
+</div>
+			</div>
+			<div class="tab"><img src="image/setting.svg" width="20"></div>
+		
+
+
+
+		
+<div class="col-xxl-7 col-lg-7 my-4">
+<div id="containermap" style="max-width: 1000px"></div>
+ </div>
+			
+<div class="col-xll-5 col-lg-5 my-4">
+	<div class="prada2">
+	     <div id="chart">
+  <ul id="numbers">
+    <li><span>600</span></li>
+    <li><span>500</span></li>
+    <li><span>400</span></li>
+    <li><span>300</span></li>
+    <li><span>200</span></li>
+    <li><span>100</span></li>
+     <li><span>0</span></li>
+ </ul>
+  
+  <ul id="bars">
+    <li><div data-percentage="56" class="bar"></div><span>Mon</span></li>
+    <li><div data-percentage="33" class="bar"></div><span>Tue<li><div data-percentage="54" class="bar"></div><span>Thu</span></li>
+    <li><div data-percentage="94" class="bar"></div><span>Wed</span></li>
+    <li><div data-percentage="44" class="bar"></div><span>Fri</span></li>
+    <li><div data-percentage="23" class="bar"></div><span>Sat</span>
+    </li>
+  </ul>
+</div>
+<button class="PCS">+</button>
+<div class="pradatext">
+	<div class="counter-label mb-5">Approve rate are above average</div>
+	<div class="counter-number-group">
+                  <span class="counter-number" style="font-weight: 500;">12,673</span>
+                  <span class="counter-number-related text-uppercase font-size-14">pcs</span>
+                </div>
+</div>
+</div></div>
+
+			<div class="col-xl-4 col-lg-6 my-3">
+				<div class="card-header">
+				<div class="card-box">
+					<img src="image/global.webp" style="width:70px; height:70px; border-radius: 50%;">
+					<div class="box-text">
+						<h3>Robin Ahrens</h3>
+						<p>machidesign@gmail</p>
+						<div class="social">
+<a href=""><img src="image/twitter.svg" style="width:14px; height: 14px;"></a>
+<a href=""><img src="image/facebook-logo.svg" style="width:14px; height: 14px;"></a>
+<a href=""><img src="image/dribble.svg" style="width:14px; height: 14px;"></a>						
+</div>
+	</div>
+	</div>
+				<div class="card-text">
+
+					<div class="erman">
+<img src="image/herman.webp" style="width:60px; height: 60px; border-radius: 50%;">
+<button><img src="image/plus.svg"  width="20"></button>
+						<div class="erman-text">
+							<h3>Herman Beck</h3>
+							<p>San-Francisco</p>
+						</div>
+					</div>
+					<div class="herman">
+<img src="image/mary.webp"style="width:60px; height: 60px; border-radius: 50%;">
+						<div class="herman-text">
+							<h3>Mary Adams</h3>
+							<p>Salt lake city</p>
+						</div>
+                    </div>
+					<div class="herman">
+<img src="image/caleb.webp"style="width:60px; height: 60px; border-radius: 50%;" >
+						<div class="herman-text">
+							<h3>Caleb Richards</h3>
+							<p>Basking Ridge Nj</p>
+						</div>
+					</div>
+					</div>
+				</div></div>
+<div class=" col-xl-4 col-lg-6 my-3">
+	<div class=" card-shadow">
+		<div class="card-header" style="display: flex;justify-content: space-around; border:none; padding:10px">
+			<p>Conversation with June Lane</p>
+		<img src="image/sari.webp" style="height:30px; width:30px; border-radius:50%;" alt="june lane">
+
+		</div>
+		<div class="card-block">
+              <div class="chats">
+                <div class="chat chat-left">
+                  <div class="chat-avatar">
+                    <img src="image/global.webp" style="width:25px;height: 25px;border-radius: 50%;">
+                  </div>
+                  <div class="chat-body">
+                    <div class="chat-content" data-toggle="tooltip" title="" data-original-title="11:37:08 am">
+                      <p>Good morning, sir.
+                     What can I do for you?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat" style="float: right;">
+                    
+                    <div class="chat-body">
+                    <div class="chat-content" data-toggle="tooltip" title="" data-original-title="11:39:57 am">
+                      <p>Well, I am just looking around.</p>
+                    </div>
+                  </div>
+                     <div class="chat-avatar">
+                  	<img src="image/sari.webp" style="height:30px; width:30px; border-radius:50%;" alt="june lane">
+                    
+                  </div>
+                  
+                </div>
+                <div class="chat chat-left" style="float: left;">
+                  <div class="chat-avatar">
+                   <img src="image/global.webp" style="width:25px;height: 25px;border-radius: 50%;">
+
+                  </div>
+                  <div class="chat-body">
+                    <div class="chat-content" data-toggle="tooltip" title="" data-original-title="11:40:10 am">
+                      <p>If necessary, please ask me.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		<div class="card-footer"><div class=" sending input-group form-material">
+	<span class="input-group-btn"><img src="image/dslr-camera.svg" width="15"></span>
+	<input class="form-control" type="text" placeholder="Type message here...">
+	<span class="input-group-btn"><img src="image/next.svg" width="15"></span>
+
+</div></div>
+	</div>
+	
+
+
+</div>
+	
+
+<div class="col-xl-4 col-lg-6 my-3">
+	<div class="card-header" style="height: 100%;">
+				<div class="caleb-top">
+					<img src="image/focus.webp">
+				</div>
+
+	<div class="caleb-pic"><a href=""><img src="image/mary.webp" style="width:100px; height=:100px; border-radius:50%;"></a></div>
+	<div class="caleb-text">
+     <h3>Caleb Richards</h3>
+     <p> 2 hours ago|Comments 20</p>
+     <span>Lorem ipsum dolLorem ip sum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.or sit amet, consectetur adipiscing elit.nec odio. Praesent libero.</span></div>
+
+
+
+			</div></div>
+		
+		
+			<div class=" col-xxl-5 col-lg-6 my-3">
+				<div class="project-right">
+
+				<div class="project-header">
+					<h5>Project</h5></div>
+					<div class="column2">
+						<table>
+							<tr>
+								<td>Project</td>
+								<td>Completed</td>
+								<td>Date</td>
+								<td>actions</td>
+
+							</tr>
+							<tr>
+								<td>The sun climbing</td>
+								<td><img src="image/bar-chart.svg"  style="width: 25px;"></td>
+								<td>Jan 1,2017</td>
+								<td><span><a href=""><img src="image/spanner.svg" style="width:10px;"></a>
+							<a href=""><img src="image/close.svg" style="width:10px;"></a>
+                             </span></td>
+
+							</tr>
+							<tr>
+								<td>lunar probe project</td>
+								<td><img src="image/profits.svg" style="width:25px;"></td>
+								<td>Feb 12,2018</td>
+								<td><span><a href=""><img src="image/spanner.svg" style="width:10px;"></a>
+							<a href=""><img src="image/close.svg" style="width:10px;"></a>
+                             </span></td>
+							</tr>
+							<tr>
+								<td>dream succesful plan</td>
+								<td><img src="image/bar.svg" style="width: 25px;"></td>
+								<td>Apr 9,2017</td>
+								<td><span><a href=""><img src="image/spanner.svg" style="width:10px;"></a>
+							<a href=""><img src="image/close.svg" style="width:10px;"></a>
+                             </span></td>
+								
+
+							</tr>
+							<tr>
+								<td>office automatization</td>
+								<td><img src="image/pie-chart.svg"  style="width: 25px;"></td>
+								<td>May 15,2017</td>
+								<td><span><a href=""><img src="image/spanner.svg" style="width:10px;"></a>
+							<a href=""><img src="image/close.svg" style="width:10px;"></a>
+                             </span></td>
+							</tr>
+							<tr>
+								<td>open strategy</td>
+								<td><img src="image/bar-chart.svg" style="width: 25px;"></td>
+								<td>Iyn 5,2017</td>
+								<td><span><a href=""><img src="image/spanner.svg" style="width:10px;"></a>
+							<a href=""><img src="image/close.svg" style="width:10px;"></a>
+                             </span></td>
+							</tr>
+
+						</table>
+					</div>
+					</div>
+					</div>
+              
+               	<div class="col-xxl-7 col-lg-6 my-3">
+               		<div class="project-right">
+               		<div class="project-header">
+					<h5>Project status</h5> <span class="five">5</span></div>
+					<div class=" column2" style="position: relative;bottom:18px;">
+						<table>
+							<tr>
+								<td>ID</td>
+								<td>projects</td>
+								<td>Status</td>
+								<td>Progres</td>
+							</tr>
+							<tr>
+								<td>619</td>
+								<td>The sun Climbbing</td>
+								<td><span class="dev">developing</span></td>
+								<td></td>
+								<td></td>
+								</tr>
+							<tr>
+								<td>620</td>
+								<td>lunar probe project</td>
+								<td><span class="design">Design</span></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>621</td>
+								<td>dream succesful plan</td>
+								<td><span class="test">testing</span></td>
+								<td></td>
+								</tr>
+							<tr>
+								<td>622</td>
+								<td>office automatization</td>
+								<td><span class="cancel">Cancelled</span></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>623</td>
+								<td>open strategy</td>
+								<td>Reply waiting</td>
+								<td></td>
+							</tr>
+						</table></div> 
+					</div></div></div></div>
+               </section>
+	<!-- footer -->
+<footer>
+	
+	<div class="footer-left">
+		<p>© 2018 </p>
+		<a href="">Remark</a>
+	</div>
+	<div class="footer-right">
+		<p>Crafted with</p>
+		<img src="image/like.svg" style="width:25px"><p>by </p>
+		<a href="">Creation Studio</a>
+	</div>
+</footer>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script>
+
+
+
+	function menu(){
+		var x=document.getElementById("menubar");
+		x.classList.toggle("active");
+
+
+		}				
+		
+</script>
+
+<script>			
+$(function() {
+  $("#bars li .bar").each( function( key, bar ) {
+    var percentage = $(this).data('percentage');
+    
+    $(this).animate({
+      'height' : percentage + '%'
+    }, 1000);
+  });
+});
+
+
+// map chart
+
+Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
+
+    // Prevent logarithmic errors in color calulcation
+    data.forEach(function (p) {
+        p.value = (p.value < 1 ? 1 : p.value);
+    });
+
+    // Initiate the chart
+    Highcharts.mapChart('containermap', {
+        chart: {
+            map: 'custom/world'
+        },
+
+        title: {
+            text: 'Zoom in on country by double click'
+        },
+
+        mapNavigation: {
+            enabled: true,
+            enableDoubleClickZoomTo: true
+        },
+
+        colorAxis: {
+            min: 1,
+            max: 1000,
+            type: 'logarithmic'
+        },
+
+        series: [{
+            data: data,
+            joinBy: ['iso-a3', 'code3'],
+            name: 'Population density',
+            states: {
+                hover: {
+                    color: '#a4edba'
+                }
+            },
+            tooltip: {
+                valueSuffix: '/km²'
+            }
+        }]
+    });
+});
+
+
+
+  
+
+          </script>
+
+
+</body>
+</html>
